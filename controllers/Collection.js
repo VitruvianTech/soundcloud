@@ -1,6 +1,6 @@
-const DOWNLOAD = '@vitruvian-tech/app-studio-soundcloud-downloader/Collection/DOWNLOAD';
-const DOWNLOAD_SUCCESS = '@vitruvian-tech/app-studio-soundcloud-downloader/Collection/DOWNLOAD_SUCCESS';
-const DOWNLOAD_FAIL = '@vitruvian-tech/app-studio-soundcloud-downloader/Collection/DOWNLOAD_FAIL';
+const DOWNLOAD = '@soundcloud-downloader/machete-bundle/Collection/DOWNLOAD';
+const DOWNLOAD_SUCCESS = '@soundcloud-downloader/machete-bundle/Collection/DOWNLOAD_SUCCESS';
+const DOWNLOAD_FAIL = '@soundcloud-downloader/machete-bundle/Collection/DOWNLOAD_FAIL';
 
 const initialState = {
   error: null,
@@ -29,6 +29,6 @@ export default function reducer(state = initialState, action = {}) {
 export function download(data) {
   return {
     types: [DOWNLOAD, DOWNLOAD_SUCCESS, DOWNLOAD_FAIL],
-    promise: (client) => client.post('/@vitruvian-tech/app-studio-soundcloud-downloader/Collection/download', { data })
+    promise: (client) => client.post('/@soundcloud-downloader/machete-bundle/Collection/download', { data })
   };
 }
