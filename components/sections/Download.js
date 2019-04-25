@@ -4,9 +4,9 @@ import {connect} from 'react-redux';
 import {initialize} from 'redux-form';
 import {Section} from '@machete-platform/core-bundle/components/layout';
 import {Contact as ContactForm} from '@machete-platform/core-bundle/components/forms';
-import {create} from '@machete-platform/core-bundle/controllers/Contact';
+import {create} from '@machete-platform/core-bundle/actions/Contact';
 import * as forms from '@soundcloud-downloader/machete-bundle/components/forms';
-import {download} from '@soundcloud-downloader/machete-bundle/controllers/Collection';
+import {download} from '@soundcloud-downloader/machete-bundle/actions/Collection';
 
 const CLIENT_ID = 'JlZIsxg2hY5WnBgtn3jfS0UYCl0K8DOg';
 
